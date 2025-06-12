@@ -83,3 +83,15 @@ body {
 .header__social-link:hover::after {
     width: 100%;
 }
+
+/* =========================
+   Footer
+========================= */
+.footer {
+    border-top: 2px solid var(--caribbean-current);
+}
+
+.footer__text {
+    padding: 1rem;
+    text-align: center;
+}
