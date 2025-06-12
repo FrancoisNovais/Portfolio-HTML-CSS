@@ -1,0 +1,24 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 180 80"
+  width="180"
+  height="80"
+  fill="none"
+  stroke="#0e0e0dff"
+  stroke-width="2"
+>
+
+  <!-- Chevron ouvrant -->
+    <polyline points="32,55 20,40 32,25" /> 
+
+  <!-- Chevron fermant -->
+    <polyline points="140,25 156,40 140,55" />
+
+  <g id="montagnes" transform="translate(10,0)">
+    <!-- Petite montagne -->
+    <polyline points="115,50 95,25 80,45" />
+
+    <!-- Grande montagne -->
+    <polyline points="85,39 65,15 40,50" />
+  </g>
+</svg>

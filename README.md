@@ -20,7 +20,7 @@ Il s'agit d’un projet évolutif qui s’améliorera au fil de l’acquisition 
 ## Structure du projet
 
 - `index.html` : page principale.
--
+- `imgs/` : dossier contenant les images utilisées.
 
 ## Évolution
 
