@@ -1,0 +1,85 @@
+/* =========================
+   Variables globales
+========================= */
+:root {
+    --dark-slate-gray: #274950ff;
+    --caribbean-current: #2a7171ff;
+    --persian-green: #2d9991ff;
+    --night: #0e0e0dff;
+    --dim-gray: #766d6bff;
+    --white-smoke: #f5f4f3ff;
+}
+
+/* =========================
+   Global & Base
+========================= */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    background-color: var(--night);
+    color: var(--white-smoke);
+}
+
+/* =========================
+   Header & Navigation
+========================= */
+.header {
+    width: 100%;
+    border-bottom: 2px solid var(--caribbean-current);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 2rem;
+}
+
+.header__logo-img {
+    width: 7rem;
+    height: auto;
+}
+
+.header__menu-list,
+.header__social-list {
+    display: flex;
+    margin: 0;
+    gap: 2rem;
+}
+
+.header__menu-item {
+    display: block;
+}
+
+.header__menu-link,
+.header__social-link {
+    position: relative;
+    padding: 0.5rem 0.2rem 0;
+    transition: color 0.3s ease;
+}
+
+.header__menu-link::after,
+.header__social-link::after {
+    position: absolute;
+    bottom: -0.5em;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--caribbean-current);
+    transition: width 0.3s ease;
+}
+
+.header__menu-link:hover,
+.header__social-link:hover {
+    color: var(--caribbean-current);
+}
+
+.header__menu-link:hover::after,
+.header__social-link:hover::after {
+    width: 100%;
+}
