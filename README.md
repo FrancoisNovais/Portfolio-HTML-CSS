@@ -20,6 +20,7 @@ Il s'agit d’un projet évolutif qui s’améliorera au fil de l’acquisition 
 ## Structure du projet
 
 - `index.html` : page principale.
+- `css/` : dossier contenant les feuilles de styles.
 - `imgs/` : dossier contenant les images utilisées.
 
 ## Évolution
@@ -27,7 +28,6 @@ Il s'agit d’un projet évolutif qui s’améliorera au fil de l’acquisition 
 Le projet a pour but d'être régulièrement mis à jour pour intégrer :
 
 - Des améliorations visuelles.
-
 - Des optimisations en performance.
 - Des fonctionnalités supplémentaires.
 
