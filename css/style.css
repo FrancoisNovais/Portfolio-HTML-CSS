@@ -1,3 +1,5 @@
+@import url("supreme.css");
+
 /* =========================
    Variables globales
 ========================= */
@@ -6,7 +8,7 @@
     --caribbean-current: #2a7171ff;
     --persian-green: #2d9991ff;
     --night: #0e0e0dff;
-    --dim-gray: #766d6bff;
+    --dim-gray: #5a564dff;
     --white-smoke: #f5f4f3ff;
 }
 
@@ -28,8 +30,10 @@ body {
    Header & Navigation
 ========================= */
 .header {
+    position: fixed;
     width: 100%;
-    border-bottom: 2px solid var(--caribbean-current);
+    border-bottom: 2px solid var(--persian-green);
+    background-color: rgba(90, 86, 77, 0.7);
 }
 
 .header__nav {
@@ -70,13 +74,13 @@ body {
     content: "";
     width: 0%;
     height: 2px;
-    background-color: var(--caribbean-current);
+    background-color: var(--persian-green);
     transition: width 0.3s ease;
 }
 
 .header__menu-link:hover,
 .header__social-link:hover {
-    color: var(--caribbean-current);
+    color: var(--persian-green);
 }
 
 .header__menu-link:hover::after,
@@ -85,10 +89,67 @@ body {
 }
 
 /* =========================
+   Hero Section
+========================= */
+
+.hero {
+    display: grid;
+    justify-items: center;
+    align-items: end;
+    grid-template-rows: 2fr 0.5fr 0.5fr;
+    height: 100vh;
+
+    text-align: center;
+
+    background-image: url("../imgs/puy-de-dome-5165907_1920.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.hero__title {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin-bottom: 3rem;
+
+    font-family: "Supreme-Variable";
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+    text-align: center;
+}
+
+.hero__title-span {
+    font-size: 7rem;
+}
+
+.hero__title-sup {
+    display: inline-block;
+
+    vertical-align: super;
+
+    font-size: 3rem;
+    color: var(--persian-green);
+
+    transform: rotate(10deg);
+
+    margin-left: 1rem;
+}
+
+.hero__description {
+    max-width: 80%;
+    margin: auto;
+
+    line-height: 1.6rem;
+}
+
+/* =========================
    Footer
 ========================= */
 .footer {
-    border-top: 2px solid var(--caribbean-current);
+    border-top: 2px solid var(--persian-green);
 }
 
 .footer__text {

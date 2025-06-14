@@ -5,7 +5,7 @@
     height="80"
     fill="none"
     stroke="#f5f4f3ff"
-    stroke-width="2"
+    stroke-width="3"
 >
     <!-- Chevron ouvrant -->
     <polyline points="32,55 20,40 32,25" />
