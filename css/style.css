@@ -33,7 +33,8 @@ body {
     position: fixed;
     width: 100%;
     border-bottom: 2px solid var(--persian-green);
-    background-color: rgba(90, 86, 77, 0.7);
+    background-color: rgba(90, 86, 77, 0.6);
+    z-index: 99;
 }
 
 .header_nav {
@@ -109,6 +110,9 @@ svg:hover {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
+    position: sticky;
+    top: calc(-100% + 10rem);
+    z-index: 50;
 }
 
 .hero_title {
@@ -220,6 +224,49 @@ svg:hover {
 .hero_arrow-down:hover .arrow_down--line:nth-child(2) {
     transform: rotate(135deg);
     background-color: var(--persian-green);
+}
+
+/* =========================
+   About Me Section
+========================= */
+.about {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 12rem 2rem 0;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--white-smoke);
+    height: 100vh;
+}
+
+.about_title {
+    margin-bottom: 3rem;
+    font-family: "Supreme-Variable";
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    color: var(--persian-green);
+}
+
+.about_text {
+    margin-bottom: 2rem;
+    text-align: justify;
+    letter-spacing: 0.02em;
+}
+
+.about_text:last-child {
+    padding: 1rem;
+    margin-bottom: 0;
+    font-style: italic;
+    text-align: center;
+    border-top: 2px solid var(--persian-green);
+    border-bottom: 2px solid var(--persian-green);
+    background-color: var(--dim-gray);
+}
+
+.about_text-em {
+    font-weight: bold;
 }
 
 /* =========================
