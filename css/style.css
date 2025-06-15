@@ -47,9 +47,11 @@ body {
     width: 7rem;
     height: auto;
 }
+
 svg:hover {
     stroke: var(--persian-green);
 }
+
 .header_menu-list,
 .header_social-list {
     display: flex;
@@ -121,13 +123,44 @@ svg:hover {
     font-weight: 800;
     letter-spacing: 0.3rem;
     text-align: center;
+
+    line-height: 0.85;
+    perspective: 500px;
+}
+.hero_title--animation {
+    display: block;
+
+    animation: show 0.5s forwards, pop-word 1.5s forwards;
+    animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
+    opacity: 0;
+
+    transform: rotateX(120deg);
+    transform-origin: 50% 100%;
 }
 
-.hero_title-span {
+.hero_title--animation:nth-of-type(2) {
+    padding: 0 2rem;
+
+    animation-delay: 1.5s;
+}
+
+@keyframes pop-word {
+    to {
+        transform: rotateX(0);
+    }
+}
+
+@keyframes show {
+    to {
+        opacity: 1;
+    }
+}
+
+.hero_title-sub {
     font-size: 7rem;
 }
 
-.hero_title-sup {
+.hero_title--sup {
     display: inline-block;
 
     vertical-align: super;
@@ -145,6 +178,48 @@ svg:hover {
     margin: auto;
 
     line-height: 1.6rem;
+}
+
+.hero_arrow-down {
+    position: relative;
+
+    width: 6rem;
+    height: 6rem;
+}
+
+.arrow_down--line {
+    z-index: 999;
+    height: 2px;
+    margin: 1px;
+    width: 1.5rem;
+    background-color: #fff;
+    transition: 0.4s ease, background-color 0.5s ease-out;
+}
+
+.arrow_down--line:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 29%;
+    bottom: 50%;
+}
+
+.arrow_down--line:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 50%;
+}
+
+.hero_arrow-down:hover .arrow_down--line:nth-child(1) {
+    transform: rotate(-135deg);
+    background-color: var(--persian-green);
+}
+
+.hero_arrow-down:hover .arrow_down--line:nth-child(2) {
+    transform: rotate(135deg);
+    background-color: var(--persian-green);
 }
 
 /* =========================
