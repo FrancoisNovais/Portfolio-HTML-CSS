@@ -257,7 +257,7 @@ svg:hover {
 
 .about_text:last-child {
     padding: 1rem;
-    margin-bottom: 0;
+    margin-top: 4rem;
     font-style: italic;
     text-align: center;
     border-top: 2px solid var(--persian-green);
@@ -279,4 +279,113 @@ svg:hover {
 .footer_text {
     padding: 1rem;
     text-align: center;
+}
+
+/* =========================
+   Contact Section
+========================= */
+.contact {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 12rem 2rem 0;
+    height: 100vh;
+    color: var(--white-smoke);
+}
+
+.contact_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.contact_intro {
+    text-align: left;
+}
+
+.contact_title {
+    font-family: "Supreme-Variable";
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    color: var(--persian-green);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 2rem;
+}
+
+.letter-o {
+    margin-right: 0.2rem;
+    background-color: var(--persian-green);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.1vw 0.1vw 0 1px rgba(255, 255, 255, 0.2); /* Ombre externe */
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+}
+
+.counter {
+    background-color: var(--night);
+    border-radius: 50%;
+    box-shadow: inset 0.1vw 0.1vw 0 1px rgba(255, 255, 255, 0.2); /* Ombre interne */
+    width: 2rem; /* Plus petit que `.letter-o` → s'insère à l'intérieur */
+    height: 2rem;
+    animation: counterAnim 6s cubic-bezier(0.75, -1.21, 0.59, 1.89) infinite;
+    transform: rotate(0deg);
+}
+
+@keyframes counterAnim {
+    12%,
+    25% {
+        width: 1.5rem;
+        height: 2.5rem;
+    }
+    37%,
+    50% {
+        width: 1rem;
+        height: 2.5rem;
+        transform: rotate(16deg);
+    }
+    63%,
+    75% {
+        width: 2rem;
+        height: 2rem;
+    }
+    87% {
+        width: 1.5rem;
+        height: 1.5rem;
+        transform: rotate(0deg);
+    }
+}
+
+.contact_text {
+    margin: 0 0 1rem;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.contact_content {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.contact_content-item {
+    margin: 0 0 1rem;
+    font-size: 1.15rem;
+}
+
+.contact_content-link {
+    color: var(--persian-green);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact_content-link:hover {
+    text-decoration: underline;
+    color: var(--white-smoke);
 }
